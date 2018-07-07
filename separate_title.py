@@ -20,15 +20,15 @@ from os import makedirs
 from os import path
 
 # Define title section
-y1=60
-y2=110
-x1=60
-x2=580
+y1=30
+y2=210
+x1=30
+x2=980
 
 if not path.isdir("titles"):
     makedirs("titles")
 for f in listdir("perspective_fix"):
-    print f
+    print(f)
     filename="perspective_fix/" + f
     img = cv2.imread(filename)
     # Grayscale to remove color variations
